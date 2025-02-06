@@ -10,10 +10,7 @@ const app = express();
 
 
 // Middleware
-app.use(cors({ 
-  origin: 'https://frontend-seven-teal-38.vercel.app', 
-  credentials: true 
-}));
+app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB connection
